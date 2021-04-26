@@ -8,7 +8,7 @@
         android:id="@+id/detail_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="상세 정보"
+        android:text="@string/상세정보"
         android:textSize="40sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -18,18 +18,19 @@
         android:id="@+id/detail_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="해야할 일"
+        android:text="@string/해야할일"
+
         app:layout_constraintTop_toBottomOf="@id/detail_title"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:textSize="24sp"/>
 
     <EditText
         android:id="@+id/detail_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="해야 할 일을 기재해주세요."
+        android:hint="@string/해야할일기재"
         android:textSize="36sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/detail_text"
@@ -40,7 +41,7 @@
         android:id="@+id/detail_time_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="시간 설정"
+        android:text="@string/시간설정"
         app:layout_constraintTop_toBottomOf="@+id/detail_input"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="32dp" />
@@ -49,12 +50,12 @@
         android:id="@+id/detail_todo_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2020.10.24"
+        android:text="@string/_2003_05_06"
         app:layout_constraintTop_toBottomOf="@id/detail_time_text"
         android:textSize="28sp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp" />
+        android:layout_marginStart="16dp" />
 
     <TextView
         android:id="@+id/detail_todo_time"
@@ -62,17 +63,17 @@
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toRightOf="@id/detail_todo_date"
         app:layout_constraintTop_toTopOf="@id/detail_todo_date"
-        android:text="09:00"
+        android:text="@string/_00_00"
         android:textSize="28sp"
-        android:layout_marginLeft="16dp"/>
+        android:layout_marginStart="16dp"/>
 
     <Button
         android:id="@+id/detail_cancel_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
         android:layout_marginBottom="32dp"
-        android:text="취소"
+        android:text="@string/취소"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
 
@@ -80,9 +81,9 @@
         android:id="@+id/detail_confirm_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="80dp"
+        android:layout_marginEnd="80dp"
         android:layout_marginBottom="32dp"
-        android:text="완료"
+        android:text="@string/완료"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
